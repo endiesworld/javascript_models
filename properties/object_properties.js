@@ -23,4 +23,4 @@ console.log(`Adaobi's address is: ${adaobi.address.city}`); // Okota
 console.log(`Emmanuel's firstname is: ${emmanuel.firstname}`); // undefined
 
 // Test
-console.log(`Emmanuel's surname is: ${emmanuel.firstname.class}`); // Error cannot read property of undefined
+console.log(`Emmanuel's surname is: ${emmanuel.firstname.class}`); // TypeError cannot read property of undefined
