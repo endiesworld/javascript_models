@@ -17,4 +17,7 @@ console.log(typeof(null)) // Prints an object value type, eventhough null is a p
 
 console.log(typeof({}))
 console.log(typeof([]))
+console.log(typeof(new Date())); // "object"
+console.log(typeof(/\d+/)); // "object"
+console.log(typeof(Math)); // "object"
 console.log(typeof(x => x**2))
