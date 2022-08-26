@@ -19,3 +19,6 @@ console.log({} === {}) // false
 
 console.log('******* strict equality (NaN === NaN ) ********')
 console.log(NaN === NaN) // false
+
+console.log('******* isNaN( NaN ) ********')
+console.log(isNaN( NaN )) // false

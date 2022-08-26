@@ -5,8 +5,8 @@
 */
 
 // Primitive value type : Can't be created, destroyed or changed can only be pointed at 
-
-console.log(typeof(2))
+console.log("******* Premitive Values *********")
+console.log(typeof 2)
 console.log(typeof('Emmanuel'))
 console.log(typeof(true))
 console.log(typeof(undefined))
@@ -14,7 +14,7 @@ console.log(typeof(null)) // Prints an object value type, eventhough null is a p
 
 
 // Object or Functions : These are mutable values
-
+console.log("******* None Premitive Values *********")
 console.log(typeof({}))
 console.log(typeof([]))
 console.log(typeof(new Date())); // "object"
