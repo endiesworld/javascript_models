@@ -60,14 +60,6 @@ const reverseList = (head) => {
         return node;
 };
 
-// const reverseList = (head) => {
-//     if(!head.next){
-//         return head
-//     }
-//     let current = head
-//     let new_head = reverseList(head.next)
-//     new_head.next = current ;
-//     return new_head
-// }
+
 
 console.log(reverseList(a).next.value)
