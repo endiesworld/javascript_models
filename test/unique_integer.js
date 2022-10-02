@@ -4,6 +4,27 @@
 let arr = [9,2,3,2,6,6]
 
 function findFirstUnique(arr) {
+    let store = {}
+    let store_order = []
+    let unique = null
+    for(let i = 0 ; i <arr.length ; i++){
+        if(store.hasOwnProperty(arr[i])){
+            store[arr[i]] += 1        
+        }
+        else{
+            store[arr[i]] = 1
+            store_order.push(arr[i])
+        }
+    }
+
+    for (let i = 0 ; i <store_order.length ; i++){
+        if (store[store_order[i]] === 1){
+            unique = store_order[i]
+            break
+        }
+    }
+
+    return unique
 
 }
 
