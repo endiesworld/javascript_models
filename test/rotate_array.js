@@ -1,18 +1,22 @@
 // Rotate an array by n
 // Given an array, can you rotate its elements from right to left by one index?
 
-let arr = [1,2,3,4,5]
-let n = 3
-
+// let arr_ = [1,2,3,4,5]
+// let n_ = 3
+let arr = [1,2,3,4,5,6,7]
+let  n = 3
+// let arr = [-1]
+// let n = 2
+// let arr = [-1,2]
+// let n = 3
 function rightRotate(arr,n){
-    let len = arr.length ;
+    let len = arr.length - 1;
     let new_array = [...arr] ;
     let new_index = 0 ;
-    let shift = len -( n -1) ;
-    for (let i = 0 ; i < len ; i++){
-        new_index = shift + i ;
-        if (new_index >= len){
-            new_index -= len
+    for (let i = 0 ; i <= len ; i++){
+        new_index = n + i ;
+        while (new_index > len){
+            new_index = new_index -len - 1
         }
         new_array[new_index] = arr[i]
     }
