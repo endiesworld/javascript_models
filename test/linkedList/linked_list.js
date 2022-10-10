@@ -44,4 +44,31 @@ function sumLinkedList (head){
     }
     return 0
 }
+
+
+//Access HeadNode => this.head
+//Check if list is empty => this.isEmpty() 
+//Node class  { data ; Node nextElement;}
+
+//Inserts a value at the end of the list  
+// LinkedList.prototype.insertAtTail = function(newData) {
+
+//   //Creating a new Node with value data
+//   let node = new Node(newData);
+
+//   //Write code here
+//   if(!this.isEmpty()){
+//     let current = this.head ;
+//     while(current.nextElement){
+//       current = current.nextElement
+//     }
+//     current.nextElement = node
+//   }
+//   else{
+//     this.insertAtHead(newData)
+//   }
+
+//   return this.head;
+// }
+
 console.log(sumLinkedList(head))
