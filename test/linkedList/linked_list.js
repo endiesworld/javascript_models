@@ -1,11 +1,7 @@
 // Write a function, sumList, that takes in the head of a linked list containing numbers as an argument. The function should return the total sum of all values in the linked list.
 
-class Node {
-    constructor(val){
-        this.value = val
-        this.next = null
-    }
-}
+
+const Node = require('./node')
 
 
 const a = new Node('A')
@@ -29,3 +25,4 @@ function sumLinkedList (head){
     }
     return 0
 }
+console.log(sumLinkedList(a))
