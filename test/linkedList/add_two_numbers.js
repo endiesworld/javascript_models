@@ -35,25 +35,30 @@
  * @return {ListNode}
  */
 var addTwoNumbers = function(l1, l2) {
-    let addition = 0
     let remainder = 0
     let current_1 = l1
     let current_2 = l2
     let data_1 = 0
     let data_2 = 0
     let store = null
-    let exact_val = 0
     let head = null
     while(current_1 || current_2){
+        // Check if node_1 current value is not null and collect its data
         if(current_1){
             data_1 = current_1.val
             current_1 = current_1.next
         }
+
+        // Check if node_2 current value is not null and collect its data
         if(current_2){
             data_2 = current_2.val
             current_2 = current_2.next
         }
+
+        // Add data collected from both nodes, with remainder from previous nodes addition
         let value = data_1 + data_2 + remainder
+        
+        // check if the value from the addition above is greater than 10, and set a remainder 
         if (value > 9){
             remainder = 1
             value = value - 10
@@ -61,6 +66,8 @@ var addTwoNumbers = function(l1, l2) {
         else{
             remainder = 0
         }
+
+        // Check if store is not null, i.e you have some nodes in it
         if(store){
                 store.next = new ListNode(value)
                 store = store.next
