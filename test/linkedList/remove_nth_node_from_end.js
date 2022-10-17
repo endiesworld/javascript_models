@@ -26,18 +26,23 @@ var removeNthFromEnd = function(head, n) {
         
     let current = head.next
     let counter = 1
+    // Count the nodes
     while(current){
         current = current.next
         counter++
     }
-    
+
     current = null
-    let n_ = counter - n 
+    
+    let n_ = counter - n  // evaluate the node index from head
     let new_head = null
     let store = null
     
     for(let i = 0 ; i<counter; i++){
+
+        // confirm that current node index isn't same with evaluated node index from head
         if(i != n_){
+            // check if we have created a new head and store
             if(!store){
                 new_head = new ListNode(head.val)
                 store = new_head
@@ -54,7 +59,6 @@ var removeNthFromEnd = function(head, n) {
             
         }
     }
-        
-    
+
     return new_head
 };
