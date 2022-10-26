@@ -66,6 +66,16 @@ class BinarySearchTree {
         parent.rightChild = new Node(newValue)
     }
 }
+
+    preOrderPrint(currentNode) {
+        if (currentNode!==null) {
+            console.log(currentNode.val);
+            this.preOrderPrint(currentNode.leftChild);
+            this.preOrderPrint(currentNode.rightChild);
+        }
+
+    }
+
 }
 
 var BST= new BinarySearchTree(8);
