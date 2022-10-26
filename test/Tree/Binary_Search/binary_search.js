@@ -70,3 +70,13 @@ class BinarySearchTree {
 
 var BST= new BinarySearchTree(8);
 console.log("The root val for BST : ", BST.root.val)
+BST.insert(4)
+BST.insert(9)
+BST.insert(5)
+BST.insert(2)
+BST.insert(8)
+BST.insert(12)
+BST.insert(10)
+BST.insert(14)
+
+inOrderPrint(BST.root)
