@@ -99,6 +99,19 @@ class BinarySearchTree {
   //we simply return from the function
 }
 
+    search(value) { 
+        var currentNode = this.root;
+        while (currentNode && (currentNode.val != value)) { 
+            if (value < currentNode.val) {
+                currentNode = currentNode.leftChild;
+            } else { 
+                currentNode = currentNode.rightChild;
+
+            }
+        }
+        return currentNode;
+    }
+
 }
 
 var BST= new BinarySearchTree(8);
